@@ -16,7 +16,7 @@ public class MySqlConexion {
 			//cambia el nro de tu puerto.
 			url="jdbc:mysql://localhost:3307/MINISTERIOPUBLICO_GLOGISTICA?serverTimezone=UTC";
 			user="root";
-			pass=" ";  //Coloca tu contraseñaaaaaaaaaaaaaaaaaa
+			pass=" ";  //Coloca tu contraseña
 			
 			//establacer la conexión a la BD. 
 			cn=DriverManager.getConnection(url,user,pass);
