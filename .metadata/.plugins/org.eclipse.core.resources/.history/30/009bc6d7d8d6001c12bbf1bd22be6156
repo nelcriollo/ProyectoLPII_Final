@@ -1,0 +1,20 @@
+package log.ministerio.fabrica;
+
+import log.ministerio.interfaces.MenuInterfaceDAO;
+import log.ministerio.interfaces.UsuarioInterfaceDAO;
+
+public class MySqlDAOFactory extends DAOFactory {
+
+	@Override
+	public UsuarioInterfaceDAO getUsuarioInterfaceDAO() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public MenuInterfaceDAO getMenuInterfaceDAO() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

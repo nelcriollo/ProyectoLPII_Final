@@ -1,0 +1,11 @@
+package log.ministerio.interfaces;
+
+import log.ministerio.entidad.Usuario;
+
+public interface UsuarioInterfaceDAO {
+
+	public int RegistrarUsuario(Usuario user);
+	public int ActualizarUsuario(Usuario user);
+	public int EliminarUsuario(Usuario user);
+}
+

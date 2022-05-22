@@ -1,3 +1,5 @@
+
+
 USE MINISTERIOPUBLICO_GLOGISTICA;
 
 
@@ -725,14 +727,14 @@ END;
 CALL SP_GENERAR_CODIGO_DETALLE_DEVOLUCION();
 
 /*PROCEDIMIENTOS ALMACENADOS*/
-/*P.A. PARA REGISTRAR UN DETALLE DE DEVOLUCIÃ“N*/
+/*P.A. PARA REGISTRAR UN DETALLE DE DEVOLUCIÓN*/
 DELIMITER $$
 CREATE PROCEDURE SP_REGISTRAR_DETALLE_DEVOL(
 		_id_DetalleDevolucion int,
         _id_Devolucion int,
 		_id_detalle_orden int,
 		_descripcion_del_bien nvarchar(100),
-		_descripcion_del_daÃ±o text,
+		_descripcion_del_daño text,
         _Factura_referecia nvarchar(25),
 		_precio float,
         _cantidad int,
@@ -740,18 +742,18 @@ CREATE PROCEDURE SP_REGISTRAR_DETALLE_DEVOL(
 )
 BEGIN
 INSERT INTO DetalleDevolucion 
-VALUES( _id_DetalleDevolucion,_id_Devolucion,_id_detalle_orden,_descripcion_del_bien,_descripcion_del_daÃ±o,_Factura_referecia,_precio,_cantidad,_credito_adeudado); 
+VALUES( _id_DetalleDevolucion,_id_Devolucion,_id_detalle_orden,_descripcion_del_bien,_descripcion_del_daño,_Factura_referecia,_precio,_cantidad,_credito_adeudado); 
 END;
 
 /*PROCEDIMIENTOS ALMACENADOS*/
-/*P.A. PARA ACTUALIZAR UN DETALLE DE DEVOLUCIÃ“N*/
+/*P.A. PARA ACTUALIZAR UN DETALLE DE DEVOLUCIÓN*/
 DELIMITER $$
 CREATE PROCEDURE SP_ACTUALIZAR_DETALLE_DEVOL(
 		_id_DetalleDevolucion int,
         _id_Devolucion int,
 		_id_detalle_orden int,
 		_descripcion_del_bien nvarchar(100),
-		_descripcion_del_daÃ±o text,
+		_descripcion_del_daño text,
         _Factura_referecia nvarchar(25),
 		_precio float,
         _cantidad int,
@@ -759,13 +761,13 @@ CREATE PROCEDURE SP_ACTUALIZAR_DETALLE_DEVOL(
 )
 BEGIN
 UPDATE  DetalleDevolucion 
-SET  id_Devolucion=_id_Devolucion,id_detalle_orden=_id_detalle_orden,descripcion_del_bien=_descripcion_del_bien,descripcion_del_daÃ±o=_descripcion_del_daÃ±o,Factura_referecia=_Factura_referecia,precio=_precio,cantidad=_cantidad,credito_adeudado=_credito_adeudado
+SET  id_Devolucion=_id_Devolucion,id_detalle_orden=_id_detalle_orden,descripcion_del_bien=_descripcion_del_bien,descripcion_del_daño=_descripcion_del_daño,Factura_referecia=_Factura_referecia,precio=_precio,cantidad=_cantidad,credito_adeudado=_credito_adeudado
 WHERE id_DetalleDevolucion=_id_DetalleDevolucion;
 END;
 
 
 /*PROCEDIMIENTOS ALMACENADOS*/
-/*P.A. PARA ELIMINAR UN DETALLE DE DEVOLUCIÃ“N*/
+/*P.A. PARA ELIMINAR UN DETALLE DE DEVOLUCIÓN*/
 DELIMITER $$
 CREATE PROCEDURE SP_ELIMINAR_DETALLE_DEVOL(
 		_id_DetalleDevolucion int
@@ -796,7 +798,7 @@ CREATE PROCEDURE SP_LISTAR_DETALLE_DEVOLUCION_COD_DEVOL(
 _id_Devolucion INT 
 )
 BEGIN
-SELECT DTDV.id_DetalleDevolucion,DTDV.id_Devolucion,DOC.id_detalle_orden,B.descripcion,DTDV.descripcion_del_daÃ±o,DTDV.Factura_referecia,B.precio_Compra,DTDV.cantidad,DTDV.credito_adeudado
+SELECT DTDV.id_DetalleDevolucion,DTDV.id_Devolucion,DOC.id_detalle_orden,B.descripcion,DTDV.descripcion_del_daño,DTDV.Factura_referecia,B.precio_Compra,DTDV.cantidad,DTDV.credito_adeudado
 FROM DetalleDevolucion as DTDV JOIN Devolucion as DEV
 ON DTDV.id_Devolucion=DEV.id_Devolucion JOIN DetalleOrdenCompra as DOC
 ON DTDV.id_detalle_orden=DOC.id_detalle_orden JOIN Bienes as B 
@@ -834,44 +836,6 @@ END;
 
 call SP_LLENAR_DATOS();
 
--- ----------------------------------------------------------------------------------------------------------------------------
--- Mantenimiento Usuario-
--- ------------------------------------------------------------------------------------------------------------------------------
-/*PROCEDIMIENTOS ALMACENADOS*/
-/*P.A. PARA LISTAR CARGOS MOSTRAR SOLO NOMBRES*/
-DELIMITER $$
-CREATE PROCEDURE SP_LISTAR_CARGOS_NOM(
-)
-BEGIN
-SELECT  NombreCargo FROM  Cargo 
-ORDER BY NombreCargo ASC;
-END;
-
-CALL SP_LISTAR_CARGOS_NOM();
-
-/*PROCEDIMIENTOS ALMACENADOS*/
-/*P.A. PARA OBTENER  EL CODIGO DEL CARGO*/
-DELIMITER $$
-CREATE PROCEDURE SP_OBTENER_COD_CARGO(
-	_NombreCargo nvarchar(60)
-)
-BEGIN
-SELECT  id_Cargo FROM  Cargo 
-WHERE NombreCargo = _NombreCargo;
-END;
-
-/*PROCEDIMIENTOS ALMACENADOS*/
-/*P.A. PARA VALIDAR LA AUTENTICACION DEL USUARIO*/
-DELIMITER $$
-CREATE PROCEDURE SP_VALIDAR_AUTENTICACION(
-	_User_Name nchar(15),
-	_contrasena nvarchar(100),
-	_id_Cargo int
-)
-BEGIN
-SELECT  * FROM  Usuario
-WHERE  User_Name = _User_Name AND contrasena =SHA(_contrasena) AND id_Cargo = _id_Cargo;
-END;
 
 -- ------------------------------------------------------------------------------------------------------------------------------------
 -- movimientos de almacen-
@@ -1075,12 +1039,11 @@ _numero_ruc nvarchar(15),
 _email varchar(50),
 _direccion varchar(100),
 _departamento varchar(35),
-_telÃ©fono varchar(15)
+_teléfono varchar(15)
 )
 BEGIN
-INSERT INTO Proveedor VALUES (_id_proveedor,_razon_social,_nombre_comercial,_numero_ruc,_email,_direccion,_departamento,_telÃ©fono);
+INSERT INTO Proveedor VALUES (_id_proveedor,_razon_social,_nombre_comercial,_numero_ruc,_email,_direccion,_departamento,_teléfono);
 END;
-
 
 
 /*P.A. PARA ACTUALIZAR REGISTRO DE PROVEEDORES*/
@@ -1093,14 +1056,13 @@ CREATE PROCEDURE SP_ACTUALIZAR_PROVEEDORES(
 		_email varchar(50),
 		_direccion varchar(100),
         _departamento varchar(35),
-        _telÃ©fono varchar(15) 
+        _teléfono varchar(15) 
 )
 BEGIN
 UPDATE Proveedor 
-SET razon_social=_razon_social,nombe_comercial=_nombe_comercial,numero_ruc=_numero_ruc,email=_email,direccion=_direccion,departamento=_departamento,telÃ©fono=_telÃ©fono
+SET razon_social=_razon_social,nombe_comercial=_nombe_comercial,numero_ruc=_numero_ruc,email=_email,direccion=_direccion,departamento=_departamento,teléfono=_teléfono
 WHERE id_proveedor=_id_proveedor;
 END;
-
 
 
 /*P.A. PARA ELIMINAR REGISTRO DE PROVEEDORES*/
@@ -1125,6 +1087,214 @@ END;
 /*COMPROBAR*/
 CALL SP_LISTAR_PROVEEDORES();
 
--- --------------------------------------------------------------------------------------------------------------------------------
+-- ---------------------------------------------------------------------------------------------------------------------------
+-- ------- ----------------------------------- PARTE DEL LOGIN LOGIN ---------------------------------------------------------
+-- ---------------------------------------------------------------------------------------------------------------------------
+-- ----------------------------------------------------------------------------------------------------------------------
+-- MANTENIMIENTO DE LA TABLA USUARIO
+-- ----------------------------------------------------------------------------------------------------------------------
+/*PROCEDIMIENTOS ALMACENADOS*/
 
 
+/*P.A. PARA REGISTRAR UN USUARIO*/
+DELIMITER $$
+CREATE PROCEDURE SP_REGISTRAR_USUARIO(
+  V_cod_usuario int ,
+  V_login_usuario varchar(15) ,
+  V_password_usuario varchar(100) ,
+  V_id_Empleado int,
+  V_estado_usuario char(1)
+)
+BEGIN
+INSERT INTO Usuario 
+VALUES (V_cod_usuario,V_login_usuario,V_password_usuario,V_id_Empleado,V_estado_usuario);
+END;
+
+
+/*P.A. PARA REGISTRAR ACTUALIZAR UN USUARIO*/
+DELIMITER $$
+CREATE PROCEDURE SP_ACTUALIZAR_USUARIO(
+  V_cod_usuario int ,
+  V_login_usuario varchar(15) ,
+  V_password_usuario varchar(100) ,
+  V_id_Empleado int,
+  V_estado_usuario char(1)
+)
+BEGIN
+UPDATE  Usuario 
+SET  login_usuario=V_login_usuario, password_usuario=V_password_usuario, id_Empleado=V_id_Empleado, estado_usuario=V_estado_usuario
+WHERE cod_usuario=V_cod_usuario;
+END;
+
+
+/*P.A. PARA REGISTRAR ELIMINAR UN USUARIO*/
+DELIMITER $$
+CREATE PROCEDURE SP_ELIMINAR_USUARIO(
+  V_cod_usuario int
+)
+BEGIN
+DELETE  FROM Usuario 
+WHERE cod_usuario=V_cod_usuario;
+END;
+
+/*P.A. PARA  LISTAR LOS USUARIOS*/
+DELIMITER $$
+CREATE PROCEDURE SP_LISTAR_USUARIOS()
+BEGIN
+SELECT * FROM Usuario;
+END;
+
+/*P.A. PARA  LISTAR USUARIO POR CODIGO*/
+DELIMITER $$
+CREATE PROCEDURE SP_LISTAR_USUARIO_POR_CODIGO(
+  V_cod_usuario int
+  )
+BEGIN
+SELECT * FROM Usuario
+WHERE cod_usuario=V_cod_usuario;
+END;
+
+/*PROCEDIMIENTOS ALMACENADOS*/
+/*P.A. PARA VALIDAR INICIO DE SESSION*/
+DELIMITER $$
+CREATE PROCEDURE SP_INICIAR_SESSION(
+  V_login_usuario varchar(15) ,
+  V_password_usuario varchar(100)
+  
+)
+BEGIN
+SELECT  U.cod_usuario,U.login_usuario,E.NomEmpleado,E.Apellidos
+FROM Usuario U
+JOIN Empleado E
+ON U.id_Empleado=E.id_Empleado
+WHERE login_usuario=V_login_usuario and password_usuario =SHA(V_password_usuario);
+END;
+
+CALL SP_INICIAR_SESSION('Ncriollo','Ncriollo'); 
+-- -------------------------------------------------------------------------------
+-- MANTENIMIENTO DE LA TABLA ROLES DE USUARIO POR MENU
+-- --------------------------------------------------------------------------------
+
+/*P.A. PARA REGISTRAR UN ROL DEL USUARIO */
+DELIMITER $$
+CREATE PROCEDURE SP_REGISTRAR_ROL_USUARIO_MENU(
+  V_cod_Rol int ,
+  V_des_Rol varchar(55) ,
+  V_url_Rol varchar(500), 
+  V_cod_menu int
+)
+BEGIN
+INSERT INTO Roles_UsuarioMenu 
+VALUES (V_cod_Rol, V_des_Rol, V_url_Rol,V_cod_menu);
+END;
+
+/*P.A. PARA ACTUALIZAR UN ROL DEL USUARIO */
+DELIMITER $$
+CREATE PROCEDURE SP_ACTUALIZAR_ROL_USUARIO_MENU(
+  V_cod_Rol int ,
+  V_des_Rol varchar(55) ,
+  V_url_Rol varchar(500), 
+  V_cod_menu int
+)
+BEGIN
+UPDATE Roles_UsuarioMenu 
+SET des_Rol=V_des_Rol, url_Rol=V_url_Rol,cod_menu=V_cod_menu
+WHERE cod_Rol=V_cod_Rol;
+END;
+
+/*P.A. PARA ELIMINAR UN ROL DE USUARIO */
+DELIMITER $$
+CREATE PROCEDURE SP_ELIMINAR_ROL_USUARIO_MENU(
+  V_cod_Rol int 
+)
+BEGIN
+DELETE FROM Roles_UsuarioMenu 
+WHERE cod_Rol=V_cod_Rol;
+END;
+
+/*P.A. PARA LISTAR LOS  MENUS*/
+DELIMITER $$
+CREATE PROCEDURE SP_LISTAR_ROLES()
+BEGIN
+SELECT * FROM Roles_UsuarioMenu;
+END;
+
+/*P.A. PARA LISTAR LOS  ROLES POR USUARIO*/
+DELIMITER $$
+CREATE PROCEDURE SP_LISTAR_ROLES_POR_USUARIO(
+ V_cod_usuario int,
+ V_cod_menu int
+)
+BEGIN
+SELECT M.cod_menu,M.des_mmenu,R.cod_Rol,R.des_Rol,R.url_Rol 
+FROM Acceso A
+JOIN Roles_UsuarioMenu R
+ON A.cod_Rol=R.cod_Rol JOIN Menu M
+ON A.cod_menu=M.cod_menu
+WHERE A.cod_usuario=V_cod_usuario AND R.cod_menu=V_cod_menu;
+END;
+
+
+-- -------------------------------------------------------------------------------
+-- MANTENIMIENTO DE LA TABLA ACCESO
+-- --------------------------------------------------------------------------------
+
+/*P.A. PARA REGISTRAR UN ACCESO*/
+DELIMITER $$
+CREATE PROCEDURE SP_REGISTRAR_ACCESO(
+  V_cod_menu int ,
+  V_cod_usuario int,
+  V_cod_Rol int
+)
+BEGIN
+INSERT INTO Acceso 
+VALUES (V_cod_menu, V_cod_usuario,V_cod_Rol);
+END;
+
+/*P.A. PARA ACTUALIZAR UN ACCESO*/
+DELIMITER $$
+CREATE PROCEDURE SP_ACTUALIZAR_ACCESO(
+	V_cod_menu int ,
+	V_cod_usuario int,
+	V_cod_Rol int
+)
+BEGIN
+UPDATE  Acceso 
+SET   cod_menu=V_cod_menu,cod_Rol=V_cod_Rol
+WHERE cod_usuario=V_cod_usuario;
+END;
+
+/*P.A. PARA ELIMINAR UN ACCESO*/
+DELIMITER $$
+CREATE PROCEDURE SP_ELIMINAR_ACCESO(
+  V_cod_Rol int
+)
+BEGIN
+DELETE FROM  Acceso 
+WHERE  cod_Rol=V_cod_Rol;
+END;
+
+/*P.A. PARA LISTAR TODOS LOS ACCESOS*/
+DELIMITER $$
+CREATE PROCEDURE SP_LISTAR_ACCESOS()
+BEGIN
+SELECT * FROM  Acceso; 
+END;
+
+
+-- ------------------------------------------------------------------------------------------------
+-- MANTENIMIENTO DE LA TABLA  MENU
+-- -------------------------------------------------------------------------------------------------
+/*P.A. PARA LISTAR LOS  MENU POR USUARIO*/
+DELIMITER $$
+CREATE PROCEDURE SP_LISTAR_MENU_POR_USUARIO(
+ V_cod_usuario int
+)
+BEGIN
+SELECT M.cod_menu,M.des_mmenu,M.icono_mmenu
+FROM Menu M
+JOIN Acceso A
+ON M.cod_menu=A.cod_menu
+WHERE A.cod_usuario=V_cod_usuario
+group by M.cod_menu;
+END;
