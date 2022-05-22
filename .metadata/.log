@@ -848,6 +848,7 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-14 10:30:42.950
 !MESSAGE Using unsafe http transport to retrieve http://download.oracle.com/otn_software/oepe/12.2.1.9/photon/repository/dependencies/, see CVE-2021-41033. Consider using https instead.
+<<<<<<< HEAD
 
 !ENTRY org.eclipse.jdt.core 4 4 2022-05-22 02:23:12.915
 !MESSAGE Failed to save JDT index: Index for /ProyectoFinal_LPII/src/main/java
@@ -883,3 +884,1538 @@ Caused by: java.lang.OutOfMemoryError: Java heap space
 	at org.eclipse.jdt.internal.compiler.util.HashtableOfObject.<init>(HashtableOfObject.java:56)
 	at org.eclipse.jdt.internal.core.index.DiskIndex.readCategoryTable(DiskIndex.java:681)
 	... 10 more
+=======
+!SESSION 2022-05-15 22:44:47.241 -----------------------------------------------
+eclipse.buildId=4.23.0.I20220308-0310
+java.version=17.0.2
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_PE
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.jface 2 0 2022-05-15 22:45:17.151
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-05-15 22:45:17.151
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1ac30be4,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@419c70f6,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-05-15 22:45:17.151
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@190cc39e,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4a2f1ae3,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.ui.navigator 2 0 2022-05-15 22:45:24.708
+!MESSAGE Can't find Navigator Content Descriptor with id: org.eclipse.jst.servlet.ui.EnhancedJavaRendering
+
+!ENTRY org.eclipse.ui.navigator 2 0 2022-05-15 22:45:24.709
+!MESSAGE Can't find Navigator Content Descriptor with id: org.eclipse.jst.servlet.ui.EnhancedJavaRendering
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-05-15 22:45:24.804
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Nelcriollo'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2022-05-15 23:08:10.819 -----------------------------------------------
+eclipse.buildId=4.23.0.I20220308-0310
+java.version=17.0.2
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_PE
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.jface 2 0 2022-05-15 23:08:21.433
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-05-15 23:08:21.433
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7c7b27c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2bd8c8f1,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-05-15 23:08:21.433
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7db63a01,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@423791,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.ui.navigator 2 0 2022-05-15 23:08:28.296
+!MESSAGE Can't find Navigator Content Descriptor with id: org.eclipse.jst.servlet.ui.EnhancedJavaRendering
+
+!ENTRY org.eclipse.ui.navigator 2 0 2022-05-15 23:08:28.297
+!MESSAGE Can't find Navigator Content Descriptor with id: org.eclipse.jst.servlet.ui.EnhancedJavaRendering
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-05-15 23:08:28.357
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Nelcriollo'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-15 23:22:18.448
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/e4/snapshots/org.eclipse.e4.ui/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-15 23:22:23.840
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/updates, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-15 23:22:24.997
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/updates/release, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-15 23:22:26.089
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/release/1.2.2/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-15 23:22:26.541
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/release/1.2.1, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-15 23:22:27.438
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/release/1.2.0, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-15 23:22:27.936
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/release/1.1.0, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-15 23:22:28.838
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/updates/milestone, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-15 23:22:29.886
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/milestone/S911-1.2-RC1, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-15 23:22:30.312
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/milestone/S909-1.2-RC1, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-15 23:22:31.195
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/milestone/S908-1.2-RC1, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-15 23:22:31.668
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/milestone/S20210519-025928-1.2.2-M1/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-15 23:22:32.714
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/milestone/S20210406-153234/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-15 23:22:33.640
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/milestone/S20191129-202804-1.2.1-RC2, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-15 23:22:33.954
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/milestone/S20191118-183434-1.2.1-RC1, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-15 23:22:35.216
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/milestone/S20170529-101518-1.1-RC2, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-15 23:22:36.111
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/milestone/S20170525-115740-1.1-RC2, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-15 23:22:36.567
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/milestone/S20170523-143239-1.1-RC1, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-15 23:22:38.150
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/milestone/S20170516-113326-1.1-M7, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-15 23:22:39.013
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/updates/nightly, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-15 23:22:41.229
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/nightly/N20220516-034204/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-15 23:22:42.666
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/nightly/N20220515-034125/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-15 23:22:43.868
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/nightly/N20220514-034139/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-15 23:22:44.719
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/nightly/N20220513-034129/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-15 23:22:45.122
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/nightly/N20220512-034135/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-15 23:22:47.620
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/oomph/uss/updates/latest, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-15 23:22:48.457
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/oomph/uss/drops/nightly/N20180202-232207, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-15 23:22:48.890
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-15 23:22:49.500
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/6.11.0, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-15 23:22:49.677
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/updatesites/6.11.0.r201704240320, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-15 23:22:49.978
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/6.12.0, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-15 23:22:50.243
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/updatesites/6.12.0.r201709030044, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-15 23:22:50.454
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/6.13.1, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-15 23:22:50.786
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/updatesites/6.13.1.r201712040202, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-15 23:22:51.012
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/updatesites/6.13.1.r201712040515, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-15 23:22:51.234
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/6.14.2, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-15 23:22:51.464
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/updatesites/6.14.2.r201802161450, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-15 23:22:51.942
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/6.14.3, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-15 23:22:52.172
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/updatesites/6.14.3.r201802240500, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-15 23:22:52.440
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/7.0.0, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-15 23:22:52.652
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/updatesites/7.0.0.r201908191551, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-15 23:22:52.818
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/7.1.0, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-15 23:22:53.087
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/updatesites/7.1.0.r202001120626, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-15 23:22:53.365
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/7.2.0, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-15 23:22:53.747
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/updatesites/7.2.0.r202003151902, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-15 23:22:53.914
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/7.3.0, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-15 23:22:54.144
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/updatesites/7.3.0.r202008060316, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-15 23:22:54.298
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/7.4.0, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-15 23:22:54.486
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/updatesites/7.4.0.r202105021533, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-15 23:22:54.658
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/7.5.0, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-15 23:22:55.107
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/updatesites/7.5.0.r202201070709, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-15 23:22:58.436
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/technology/m2e/releases/, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-15 23:22:59.575
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/technology/m2e/releases/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-15 23:22:59.890
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/technology/m2e/releases/, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2022-05-15 23:23:01.976
+!MESSAGE No repository found at http://download.eclipse.org/technology/m2e/releases/.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-15 23:23:02.357
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/webtools/repository/2021-09/, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-15 23:23:04.551
+!MESSAGE Using unsafe http transport to retrieve http://download.oracle.com/otn_software/oepe/12.2.1.9/photon/repository/dependencies/, see CVE-2021-41033. Consider using https instead.
+!SESSION 2022-05-18 12:10:26.046 -----------------------------------------------
+eclipse.buildId=4.23.0.I20220308-0310
+java.version=17.0.2
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_PE
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.jface 2 0 2022-05-18 12:10:46.609
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-05-18 12:10:46.609
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@27ada0e8,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@62fa4a88,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-05-18 12:10:46.609
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4b6942a0,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@64641998,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.ui.navigator 2 0 2022-05-18 12:10:53.263
+!MESSAGE Can't find Navigator Content Descriptor with id: org.eclipse.jst.servlet.ui.EnhancedJavaRendering
+
+!ENTRY org.eclipse.ui.navigator 2 0 2022-05-18 12:10:53.264
+!MESSAGE Can't find Navigator Content Descriptor with id: org.eclipse.jst.servlet.ui.EnhancedJavaRendering
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-05-18 12:10:53.462
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Nelcriollo'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-18 13:05:44.522
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/e4/snapshots/org.eclipse.e4.ui/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-18 13:05:49.304
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/updates, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-18 13:05:50.527
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/updates/release, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-18 13:05:51.612
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/release/1.2.2/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-18 13:05:52.012
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/release/1.2.1, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-18 13:05:52.924
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/release/1.2.0, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-18 13:05:53.265
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/release/1.1.0, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-18 13:05:54.329
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/updates/milestone, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-18 13:05:55.178
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/milestone/S911-1.2-RC1, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-18 13:05:55.538
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/milestone/S909-1.2-RC1, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-18 13:05:56.653
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/milestone/S908-1.2-RC1, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-18 13:05:57.588
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/milestone/S20210519-025928-1.2.2-M1/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-18 13:05:58.088
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/milestone/S20210406-153234/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-18 13:05:59.146
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/milestone/S20191129-202804-1.2.1-RC2, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-18 13:06:00.429
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/milestone/S20191118-183434-1.2.1-RC1, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-18 13:06:01.307
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/milestone/S20170529-101518-1.1-RC2, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-18 13:06:01.600
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/milestone/S20170525-115740-1.1-RC2, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-18 13:06:02.430
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/milestone/S20170523-143239-1.1-RC1, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-18 13:06:02.752
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/milestone/S20170516-113326-1.1-M7, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-18 13:06:03.632
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/updates/nightly, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-18 13:06:05.030
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/nightly/N20220518-034132/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-18 13:06:06.285
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/nightly/N20220517-034154/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-18 13:06:22.201
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/nightly/N20220516-034204/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-18 13:06:22.696
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/nightly/N20220515-034125/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-18 13:06:23.495
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/nightly/N20220514-034139/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-18 13:06:25.996
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/oomph/uss/updates/latest, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-18 13:06:26.825
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/oomph/uss/drops/nightly/N20180202-232207, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-18 13:06:27.742
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-18 13:06:28.238
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/6.11.0, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-18 13:06:28.305
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/updatesites/6.11.0.r201704240320, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-18 13:06:28.380
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/6.12.0, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-18 13:06:28.440
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/updatesites/6.12.0.r201709030044, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-18 13:06:28.522
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/6.13.1, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-18 13:06:28.584
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/updatesites/6.13.1.r201712040202, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-18 13:06:28.639
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/updatesites/6.13.1.r201712040515, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-18 13:06:28.671
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/6.14.2, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-18 13:06:28.731
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/updatesites/6.14.2.r201802161450, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-18 13:06:28.767
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/6.14.3, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-18 13:06:28.859
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/updatesites/6.14.3.r201802240500, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-18 13:06:28.905
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/7.0.0, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-18 13:06:28.971
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/updatesites/7.0.0.r201908191551, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-18 13:06:29.014
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/7.1.0, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-18 13:06:29.108
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/updatesites/7.1.0.r202001120626, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-18 13:06:29.150
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/7.2.0, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-18 13:06:29.209
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/updatesites/7.2.0.r202003151902, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-18 13:06:29.251
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/7.3.0, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-18 13:06:29.324
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/updatesites/7.3.0.r202008060316, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-18 13:06:29.365
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/7.4.0, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-18 13:06:29.420
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/updatesites/7.4.0.r202105021533, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-18 13:06:29.463
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/7.5.0, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-18 13:06:29.523
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/updatesites/7.5.0.r202201070709, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-18 13:06:32.407
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/technology/m2e/releases/, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-18 13:06:33.547
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/technology/m2e/releases/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-18 13:06:33.813
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/technology/m2e/releases/, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2022-05-18 13:06:36.471
+!MESSAGE No repository found at http://download.eclipse.org/technology/m2e/releases/.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-18 13:06:37.161
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/webtools/repository/2021-09/, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-18 13:06:38.751
+!MESSAGE Using unsafe http transport to retrieve http://download.oracle.com/otn_software/oepe/12.2.1.9/photon/repository/dependencies/, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.wst.validation 4 0 2022-05-18 22:31:09.274
+!MESSAGE OperationCanceledException
+!STACK 0
+org.eclipse.core.runtime.OperationCanceledException: 
+	at org.eclipse.wst.validation.internal.operations.ValidationOperation.checkCanceled(ValidationOperation.java:197)
+	at org.eclipse.wst.validation.internal.operations.ValidationOperation.validate(ValidationOperation.java:800)
+	at org.eclipse.wst.validation.internal.operations.ValidationOperation.run(ValidationOperation.java:654)
+	at org.eclipse.wst.validation.internal.operations.ValidationBuilder.build(ValidationBuilder.java:192)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:860)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:232)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:281)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:334)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:337)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:392)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:417)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:161)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:255)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2022-05-19 10:09:20.078 -----------------------------------------------
+eclipse.buildId=4.23.0.I20220308-0310
+java.version=17.0.2
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_PE
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.jface 2 0 2022-05-19 10:10:02.951
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-05-19 10:10:02.951
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2e845f1c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1e9afe4e,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-05-19 10:10:02.951
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1f67d37f,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5b8ba1d2,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.ui.navigator 2 0 2022-05-19 10:10:09.614
+!MESSAGE Can't find Navigator Content Descriptor with id: org.eclipse.jst.servlet.ui.EnhancedJavaRendering
+
+!ENTRY org.eclipse.ui.navigator 2 0 2022-05-19 10:10:09.614
+!MESSAGE Can't find Navigator Content Descriptor with id: org.eclipse.jst.servlet.ui.EnhancedJavaRendering
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-05-19 10:10:13.798
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Nelcriollo'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 10:32:10.971
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/oomph/uss/updates/latest, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 10:32:12.113
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/oomph/uss/drops/nightly/N20180202-232207, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 10:32:12.615
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 10:32:13.151
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/6.11.0, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 10:32:13.329
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/updatesites/6.11.0.r201704240320, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 10:32:13.738
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/6.12.0, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 10:32:13.958
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/updatesites/6.12.0.r201709030044, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 10:32:14.262
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/6.13.1, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 10:32:14.438
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/updatesites/6.13.1.r201712040202, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 10:32:14.623
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/updatesites/6.13.1.r201712040515, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 10:32:14.762
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/6.14.2, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 10:32:14.989
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/updatesites/6.14.2.r201802161450, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 10:32:15.154
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/6.14.3, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 10:32:15.349
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/updatesites/6.14.3.r201802240500, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 10:32:15.518
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/7.0.0, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 10:32:15.690
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/updatesites/7.0.0.r201908191551, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 10:32:16.020
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/7.1.0, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 10:32:16.231
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/updatesites/7.1.0.r202001120626, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 10:32:16.624
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/7.2.0, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 10:32:16.812
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/updatesites/7.2.0.r202003151902, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 10:32:16.966
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/7.3.0, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 10:32:17.137
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/updatesites/7.3.0.r202008060316, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 10:32:17.344
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/7.4.0, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 10:32:17.513
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/updatesites/7.4.0.r202105021533, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 10:32:17.721
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/7.5.0, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 10:32:17.894
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/updatesites/7.5.0.r202201070709, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 10:32:22.601
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/technology/m2e/releases/, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 10:32:24.116
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/technology/m2e/releases/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 10:32:24.989
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/technology/m2e/releases/, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2022-05-19 10:32:27.186
+!MESSAGE No repository found at http://download.eclipse.org/technology/m2e/releases/.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 10:32:27.482
+!MESSAGE Using unsafe http transport to retrieve http://download.oracle.com/otn_software/oepe/12.2.1.9/photon/repository/dependencies/, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 10:32:35.403
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/e4/snapshots/org.eclipse.e4.ui/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 10:32:36.724
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/updates, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 10:32:38.273
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/updates/release, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 10:32:39.167
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/release/1.2.2/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 10:32:39.662
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/release/1.2.1, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 10:32:41.287
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/release/1.2.0, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 10:32:42.274
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/release/1.1.0, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 10:32:42.576
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/updates/milestone, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 10:32:43.651
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/milestone/S911-1.2-RC1, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 10:32:44.126
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/milestone/S909-1.2-RC1, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 10:32:45.064
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/milestone/S908-1.2-RC1, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 10:32:45.566
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/milestone/S20210519-025928-1.2.2-M1/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 10:32:46.539
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/milestone/S20210406-153234/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 10:32:46.911
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/milestone/S20191129-202804-1.2.1-RC2, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 10:32:47.834
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/milestone/S20191118-183434-1.2.1-RC1, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 10:32:48.148
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/milestone/S20170529-101518-1.1-RC2, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 10:32:49.006
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/milestone/S20170525-115740-1.1-RC2, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 10:32:49.306
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/milestone/S20170523-143239-1.1-RC1, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 10:32:50.215
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/milestone/S20170516-113326-1.1-M7, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 10:32:50.538
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/updates/nightly, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 10:32:52.883
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/nightly/N20220519-034137/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 10:32:54.056
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/nightly/N20220518-034132/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 10:32:54.485
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/nightly/N20220517-034154/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 10:32:55.528
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/nightly/N20220516-034204/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 10:32:56.640
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/nightly/N20220515-034125/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 10:33:00.595
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/webtools/repository/2021-09/, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.ui.ide 4 4 2022-05-19 17:58:21.405
+!MESSAGE Not properly disposed SWT resource
+!STACK 0
+java.lang.Error: SWT Resource was not properly disposed
+	at org.eclipse.swt.graphics.Resource.initNonDisposeTracking(Resource.java:172)
+	at org.eclipse.swt.graphics.Resource.<init>(Resource.java:120)
+	at org.eclipse.swt.graphics.Image.<init>(Image.java:728)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:341)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:290)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:268)
+	at org.eclipse.jdt.internal.ui.text.correction.proposals.FixCorrectionProposal.getImage(FixCorrectionProposal.java:102)
+	at org.eclipse.jdt.internal.ui.text.java.hover.AbstractAnnotationHover$AnnotationInformationControl.createCompletionProposalLink(AbstractAnnotationHover.java:492)
+	at org.eclipse.jdt.internal.ui.text.java.hover.AbstractAnnotationHover$AnnotationInformationControl.createCompletionProposalsList(AbstractAnnotationHover.java:396)
+	at org.eclipse.jdt.internal.ui.text.java.hover.AbstractAnnotationHover$AnnotationInformationControl.createCompletionProposalsControl(AbstractAnnotationHover.java:377)
+	at org.eclipse.jdt.internal.ui.text.java.hover.AbstractAnnotationHover$AnnotationInformationControl.deferredCreateContent(AbstractAnnotationHover.java:306)
+	at org.eclipse.jdt.internal.ui.text.java.hover.AbstractAnnotationHover$AnnotationInformationControl.setInput(AbstractAnnotationHover.java:190)
+	at org.eclipse.jface.text.AbstractInformationControlManager.internalShowInformationControl(AbstractInformationControlManager.java:1151)
+	at org.eclipse.jface.text.AbstractInformationControlManager.presentInformation(AbstractInformationControlManager.java:1120)
+	at org.eclipse.jface.text.AbstractHoverInformationControlManager.presentInformation(AbstractHoverInformationControlManager.java:884)
+	at org.eclipse.jface.text.TextViewerHoverManager.doPresentInformation(TextViewerHoverManager.java:237)
+	at org.eclipse.jface.text.TextViewerHoverManager.lambda$3(TextViewerHoverManager.java:227)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4035)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3635)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.ui.ide 4 4 2022-05-19 17:59:03.613
+!MESSAGE Not properly disposed SWT resource
+!STACK 0
+java.lang.Error: SWT Resource was not properly disposed
+	at org.eclipse.swt.graphics.Resource.initNonDisposeTracking(Resource.java:172)
+	at org.eclipse.swt.graphics.Resource.<init>(Resource.java:120)
+	at org.eclipse.swt.graphics.Image.<init>(Image.java:728)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:341)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:290)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:268)
+	at org.eclipse.jdt.internal.ui.text.correction.proposals.FixCorrectionProposal.getImage(FixCorrectionProposal.java:102)
+	at org.eclipse.jdt.internal.ui.text.java.hover.AbstractAnnotationHover$AnnotationInformationControl.createCompletionProposalLink(AbstractAnnotationHover.java:492)
+	at org.eclipse.jdt.internal.ui.text.java.hover.AbstractAnnotationHover$AnnotationInformationControl.createCompletionProposalsList(AbstractAnnotationHover.java:396)
+	at org.eclipse.jdt.internal.ui.text.java.hover.AbstractAnnotationHover$AnnotationInformationControl.createCompletionProposalsControl(AbstractAnnotationHover.java:377)
+	at org.eclipse.jdt.internal.ui.text.java.hover.AbstractAnnotationHover$AnnotationInformationControl.deferredCreateContent(AbstractAnnotationHover.java:306)
+	at org.eclipse.jdt.internal.ui.text.java.hover.AbstractAnnotationHover$AnnotationInformationControl.setInput(AbstractAnnotationHover.java:190)
+	at org.eclipse.jface.internal.text.InformationControlReplacer.showInformationControl(InformationControlReplacer.java:157)
+	at org.eclipse.jface.text.AbstractInformationControlManager.internalShowInformationControl(AbstractInformationControlManager.java:1134)
+	at org.eclipse.jface.text.AbstractInformationControlManager.presentInformation(AbstractInformationControlManager.java:1120)
+	at org.eclipse.jface.text.AbstractInformationControlManager.setInformation(AbstractInformationControlManager.java:431)
+	at org.eclipse.jface.internal.text.InformationControlReplacer.computeInformation(InformationControlReplacer.java:116)
+	at org.eclipse.jface.text.AbstractInformationControlManager.doShowInformation(AbstractInformationControlManager.java:1101)
+	at org.eclipse.jface.text.AbstractInformationControlManager.showInformation(AbstractInformationControlManager.java:1091)
+	at org.eclipse.jface.internal.text.InformationControlReplacer.replaceInformationControl(InformationControlReplacer.java:103)
+	at org.eclipse.jface.text.AbstractInformationControlManager.replaceInformationControl(AbstractInformationControlManager.java:1268)
+	at org.eclipse.jface.text.AbstractHoverInformationControlManager.replaceInformationControl(AbstractHoverInformationControlManager.java:794)
+	at org.eclipse.jface.text.TextViewerHoverManager.replaceInformationControl(TextViewerHoverManager.java:297)
+	at org.eclipse.jface.text.AbstractHoverInformationControlManager$1.lambda$0(AbstractHoverInformationControlManager.java:856)
+	at org.eclipse.ui.internal.PendingSyncExec.run(PendingSyncExec.java:68)
+	at org.eclipse.ui.internal.UILockListener.doPendingWork(UILockListener.java:171)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4035)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3635)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.ui.ide 4 4 2022-05-19 17:59:03.614
+!MESSAGE Not properly disposed SWT resource
+!STACK 0
+java.lang.Error: SWT Resource was not properly disposed
+	at org.eclipse.swt.graphics.Resource.initNonDisposeTracking(Resource.java:172)
+	at org.eclipse.swt.graphics.Resource.<init>(Resource.java:120)
+	at org.eclipse.swt.graphics.Image.<init>(Image.java:728)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:341)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:290)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:268)
+	at org.eclipse.jdt.internal.ui.text.correction.proposals.FixCorrectionProposal.getImage(FixCorrectionProposal.java:102)
+	at org.eclipse.jdt.internal.ui.text.java.hover.AbstractAnnotationHover$AnnotationInformationControl.createCompletionProposalLink(AbstractAnnotationHover.java:492)
+	at org.eclipse.jdt.internal.ui.text.java.hover.AbstractAnnotationHover$AnnotationInformationControl.createCompletionProposalsList(AbstractAnnotationHover.java:396)
+	at org.eclipse.jdt.internal.ui.text.java.hover.AbstractAnnotationHover$AnnotationInformationControl.createCompletionProposalsControl(AbstractAnnotationHover.java:377)
+	at org.eclipse.jdt.internal.ui.text.java.hover.AbstractAnnotationHover$AnnotationInformationControl.deferredCreateContent(AbstractAnnotationHover.java:306)
+	at org.eclipse.jdt.internal.ui.text.java.hover.AbstractAnnotationHover$AnnotationInformationControl.setInput(AbstractAnnotationHover.java:190)
+	at org.eclipse.jface.text.AbstractInformationControlManager.internalShowInformationControl(AbstractInformationControlManager.java:1151)
+	at org.eclipse.jface.text.AbstractInformationControlManager.presentInformation(AbstractInformationControlManager.java:1120)
+	at org.eclipse.jface.text.AbstractHoverInformationControlManager.presentInformation(AbstractHoverInformationControlManager.java:884)
+	at org.eclipse.jface.text.TextViewerHoverManager.doPresentInformation(TextViewerHoverManager.java:237)
+	at org.eclipse.jface.text.TextViewerHoverManager.lambda$3(TextViewerHoverManager.java:227)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4035)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3635)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+!SESSION 2022-05-19 22:30:08.393 -----------------------------------------------
+eclipse.buildId=4.23.0.I20220308-0310
+java.version=17.0.2
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_PE
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.jface 2 0 2022-05-19 22:30:39.635
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-05-19 22:30:39.635
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2e845f1c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1e9afe4e,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-05-19 22:30:39.635
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1f67d37f,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5b8ba1d2,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.ui.navigator 2 0 2022-05-19 22:30:48.772
+!MESSAGE Can't find Navigator Content Descriptor with id: org.eclipse.jst.servlet.ui.EnhancedJavaRendering
+
+!ENTRY org.eclipse.ui.navigator 2 0 2022-05-19 22:30:48.773
+!MESSAGE Can't find Navigator Content Descriptor with id: org.eclipse.jst.servlet.ui.EnhancedJavaRendering
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-05-19 22:30:48.856
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Nelcriollo'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 22:48:17.052
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/oomph/uss/updates/latest, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 22:48:18.109
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/oomph/uss/drops/nightly/N20180202-232207, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 22:48:18.562
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 22:48:19.034
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/6.11.0, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 22:48:19.132
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/updatesites/6.11.0.r201704240320, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 22:48:19.197
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/6.12.0, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 22:48:19.260
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/updatesites/6.12.0.r201709030044, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 22:48:19.304
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/6.13.1, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 22:48:19.376
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/updatesites/6.13.1.r201712040202, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 22:48:19.423
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/updatesites/6.13.1.r201712040515, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 22:48:19.472
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/6.14.2, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 22:48:19.560
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/updatesites/6.14.2.r201802161450, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 22:48:19.705
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/6.14.3, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 22:48:19.840
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/updatesites/6.14.3.r201802240500, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 22:48:19.890
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/7.0.0, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 22:48:19.964
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/updatesites/7.0.0.r201908191551, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 22:48:20.017
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/7.1.0, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 22:48:20.095
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/updatesites/7.1.0.r202001120626, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 22:48:20.424
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/7.2.0, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 22:48:20.495
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/updatesites/7.2.0.r202003151902, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 22:48:20.541
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/7.3.0, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 22:48:20.612
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/updatesites/7.3.0.r202008060316, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 22:48:20.687
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/7.4.0, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 22:48:20.824
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/updatesites/7.4.0.r202105021533, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 22:48:20.870
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/7.5.0, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 22:48:20.945
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/updatesites/7.5.0.r202201070709, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 22:48:25.083
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/technology/m2e/releases/, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 22:48:26.288
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/technology/m2e/releases/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 22:48:26.579
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/technology/m2e/releases/, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2022-05-19 22:48:28.667
+!MESSAGE No repository found at http://download.eclipse.org/technology/m2e/releases/.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 22:48:29.025
+!MESSAGE Using unsafe http transport to retrieve http://download.oracle.com/otn_software/oepe/12.2.1.9/photon/repository/dependencies/, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 22:48:43.445
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/e4/snapshots/org.eclipse.e4.ui/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 22:48:44.359
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/updates, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 22:48:45.670
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/updates/release, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 22:48:46.520
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/release/1.2.2/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 22:48:46.806
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/release/1.2.1, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 22:48:47.686
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/release/1.2.0, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 22:48:48.133
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/release/1.1.0, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 22:48:48.968
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/updates/milestone, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 22:48:49.236
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/milestone/S911-1.2-RC1, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 22:48:50.125
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/milestone/S909-1.2-RC1, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 22:48:50.400
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/milestone/S908-1.2-RC1, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 22:48:51.458
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/milestone/S20210519-025928-1.2.2-M1/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 22:48:52.381
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/milestone/S20210406-153234/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 22:48:52.685
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/milestone/S20191129-202804-1.2.1-RC2, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 22:48:53.571
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/milestone/S20191118-183434-1.2.1-RC1, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 22:48:53.868
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/milestone/S20170529-101518-1.1-RC2, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 22:48:54.758
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/milestone/S20170525-115740-1.1-RC2, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 22:48:55.064
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/milestone/S20170523-143239-1.1-RC1, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 22:48:57.015
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/milestone/S20170516-113326-1.1-M7, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 22:48:58.190
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/updates/nightly, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 22:49:00.225
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/nightly/N20220520-034150/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 22:49:01.379
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/nightly/N20220519-034137/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 22:49:01.919
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/nightly/N20220518-034132/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 22:49:03.861
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/nightly/N20220517-034154/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 22:49:04.782
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/nightly/N20220516-034204/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-19 22:49:09.176
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/webtools/repository/2021-09/, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.lsp4e 4 0 2022-05-20 16:37:20.899
+!MESSAGE TimeoutException
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.operations.declaration.OpenDeclarationHyperlinkDetector.detectHyperlinks(OpenDeclarationHyperlinkDetector.java:94)
+	at org.eclipse.ui.texteditor.HyperlinkDetectorRegistry$HyperlinkDetectorDelegate.detectHyperlinks(HyperlinkDetectorRegistry.java:81)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:289)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:262)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.mouseMove(HyperlinkManager.java:457)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:216)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4243)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1063)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4060)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3632)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.jface.text 4 0 2022-05-21 01:49:10.951
+!MESSAGE Unexpected runtime error while computing a text hover
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.wst.sse.core.internal.provisional.text.ITextRegion.getStart()" because "containedRegion" is null
+	at org.eclipse.wst.sse.core.internal.text.BasicStructuredDocumentRegion.getStartOffset(BasicStructuredDocumentRegion.java:279)
+	at org.eclipse.wst.sse.core.internal.text.BasicStructuredDocumentRegion.getText(BasicStructuredDocumentRegion.java:306)
+	at org.eclipse.wst.xml.ui.internal.taginfo.XMLTagInfoHoverProcessor.computeTagAttValueHelp(XMLTagInfoHoverProcessor.java:136)
+	at org.eclipse.wst.xml.ui.internal.taginfo.XMLTagInfoHoverProcessor.computeRegionHelp(XMLTagInfoHoverProcessor.java:113)
+	at org.eclipse.wst.xml.ui.internal.taginfo.XMLTagInfoHoverProcessor.computeHoverHelp(XMLTagInfoHoverProcessor.java:88)
+	at org.eclipse.wst.xml.ui.internal.taginfo.XMLTagInfoHoverProcessor.getHoverInfo(XMLTagInfoHoverProcessor.java:259)
+	at org.eclipse.jst.jsf.facelet.ui.internal.hover.FaceletHover.getHoverInfo(FaceletHover.java:70)
+	at org.eclipse.wst.sse.ui.internal.taginfo.BestMatchHover.getHoverInfo2(BestMatchHover.java:144)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.jface.text 4 0 2022-05-21 01:51:26.771
+!MESSAGE Unexpected runtime error while computing a text hover
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.wst.sse.core.internal.provisional.text.ITextRegion.getStart()" because "containedRegion" is null
+	at org.eclipse.wst.sse.core.internal.text.BasicStructuredDocumentRegion.getStartOffset(BasicStructuredDocumentRegion.java:279)
+	at org.eclipse.wst.sse.core.internal.text.BasicStructuredDocumentRegion.getText(BasicStructuredDocumentRegion.java:306)
+	at org.eclipse.wst.xml.ui.internal.taginfo.XMLTagInfoHoverProcessor.computeTagAttValueHelp(XMLTagInfoHoverProcessor.java:136)
+	at org.eclipse.wst.xml.ui.internal.taginfo.XMLTagInfoHoverProcessor.computeRegionHelp(XMLTagInfoHoverProcessor.java:113)
+	at org.eclipse.wst.xml.ui.internal.taginfo.XMLTagInfoHoverProcessor.computeHoverHelp(XMLTagInfoHoverProcessor.java:88)
+	at org.eclipse.wst.xml.ui.internal.taginfo.XMLTagInfoHoverProcessor.getHoverInfo(XMLTagInfoHoverProcessor.java:259)
+	at org.eclipse.jst.jsf.facelet.ui.internal.hover.FaceletHover.getHoverInfo(FaceletHover.java:70)
+	at org.eclipse.wst.sse.ui.internal.taginfo.BestMatchHover.getHoverInfo2(BestMatchHover.java:144)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.jface.text 4 0 2022-05-21 01:51:29.061
+!MESSAGE Unexpected runtime error while computing a text hover
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.wst.sse.core.internal.provisional.text.ITextRegion.getStart()" because "containedRegion" is null
+	at org.eclipse.wst.sse.core.internal.text.BasicStructuredDocumentRegion.getStartOffset(BasicStructuredDocumentRegion.java:279)
+	at org.eclipse.wst.sse.core.internal.text.BasicStructuredDocumentRegion.getText(BasicStructuredDocumentRegion.java:306)
+	at org.eclipse.wst.xml.ui.internal.taginfo.XMLTagInfoHoverProcessor.computeTagAttValueHelp(XMLTagInfoHoverProcessor.java:136)
+	at org.eclipse.wst.xml.ui.internal.taginfo.XMLTagInfoHoverProcessor.computeRegionHelp(XMLTagInfoHoverProcessor.java:113)
+	at org.eclipse.wst.xml.ui.internal.taginfo.XMLTagInfoHoverProcessor.computeHoverHelp(XMLTagInfoHoverProcessor.java:88)
+	at org.eclipse.wst.xml.ui.internal.taginfo.XMLTagInfoHoverProcessor.getHoverInfo(XMLTagInfoHoverProcessor.java:259)
+	at org.eclipse.jst.jsf.facelet.ui.internal.hover.FaceletHover.getHoverInfo(FaceletHover.java:70)
+	at org.eclipse.wst.sse.ui.internal.taginfo.BestMatchHover.getHoverInfo2(BestMatchHover.java:144)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.wst.xml.core 4 4 2022-05-21 01:57:53.754
+!MESSAGE IStructuredDocumentRegion management failed.
+!STACK 0
+org.eclipse.wst.xml.core.internal.document.StructuredDocumentRegionManagementException: IStructuredDocumentRegion management failed.
+	at org.eclipse.wst.xml.core.internal.document.XMLModelParser.removeStructuredDocumentRegion(XMLModelParser.java:2224)
+	at org.eclipse.wst.xml.core.internal.document.XMLModelParser.replaceStructuredDocumentRegions(XMLModelParser.java:2341)
+	at org.eclipse.wst.xml.core.internal.document.DOMModelImpl.nodesReplaced(DOMModelImpl.java:742)
+	at org.eclipse.wst.sse.core.internal.text.BasicStructuredDocument._fireEvent(BasicStructuredDocument.java:602)
+	at org.eclipse.wst.sse.core.internal.text.BasicStructuredDocument.fireStructuredDocumentEvent(BasicStructuredDocument.java:1200)
+	at org.eclipse.wst.sse.core.internal.text.BasicStructuredDocument.internalReplaceText(BasicStructuredDocument.java:1981)
+	at org.eclipse.wst.sse.core.internal.text.BasicStructuredDocument.replaceText(BasicStructuredDocument.java:2425)
+	at org.eclipse.wst.sse.core.internal.text.BasicStructuredDocument.replaceText(BasicStructuredDocument.java:2410)
+	at org.eclipse.wst.sse.core.internal.text.JobSafeStructuredDocument.access$2(JobSafeStructuredDocument.java:1)
+	at org.eclipse.wst.sse.core.internal.text.JobSafeStructuredDocument$3.run(JobSafeStructuredDocument.java:143)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.wst.sse.ui.EditorExecutionContext.execute(EditorExecutionContext.java:150)
+	at org.eclipse.wst.sse.core.internal.text.JobSafeStructuredDocument.replaceText(JobSafeStructuredDocument.java:146)
+	at org.eclipse.wst.sse.core.internal.text.BasicStructuredDocument.replace(BasicStructuredDocument.java:2370)
+	at org.eclipse.wst.sse.core.internal.text.JobSafeStructuredDocument.access$0(JobSafeStructuredDocument.java:1)
+	at org.eclipse.wst.sse.core.internal.text.JobSafeStructuredDocument$1.run(JobSafeStructuredDocument.java:105)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.wst.sse.ui.EditorExecutionContext.execute(EditorExecutionContext.java:150)
+	at org.eclipse.wst.sse.core.internal.text.JobSafeStructuredDocument.replace(JobSafeStructuredDocument.java:108)
+	at org.eclipse.jface.text.projection.ProjectionTextStore.replace(ProjectionTextStore.java:106)
+	at org.eclipse.jface.text.AbstractDocument.replace(AbstractDocument.java:1093)
+	at org.eclipse.jface.text.AbstractDocument.replace(AbstractDocument.java:1118)
+	at org.eclipse.jface.text.projection.ProjectionDocument.replace(ProjectionDocument.java:627)
+	at org.eclipse.jface.text.DefaultDocumentAdapter.replaceTextRange(DefaultDocumentAdapter.java:223)
+	at org.eclipse.swt.custom.StyledText.modifyContent(StyledText.java:7639)
+	at org.eclipse.swt.custom.StyledText.sendKeyEvent(StyledText.java:8539)
+	at org.eclipse.swt.custom.StyledText.doBackspace(StyledText.java:2340)
+	at org.eclipse.swt.custom.StyledText.invokeAction(StyledText.java:7428)
+	at org.eclipse.swt.custom.StyledText.handleKey(StyledText.java:6226)
+	at org.eclipse.swt.custom.StyledText.handleKeyDown(StyledText.java:6253)
+	at org.eclipse.swt.custom.StyledText.lambda$28(StyledText.java:5932)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4243)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1063)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1087)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1072)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1114)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1110)
+	at org.eclipse.swt.widgets.Widget.wmChar(Widget.java:1539)
+	at org.eclipse.swt.widgets.Control.WM_CHAR(Control.java:4868)
+	at org.eclipse.swt.widgets.Canvas.WM_CHAR(Canvas.java:345)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4746)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5015)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3630)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+!SESSION 2022-05-21 09:55:02.034 -----------------------------------------------
+eclipse.buildId=4.23.0.I20220308-0310
+java.version=17.0.2
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_PE
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.jface 2 0 2022-05-21 09:56:27.129
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-05-21 09:56:27.129
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@64641998,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2e845f1c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-05-21 09:56:27.129
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1e9afe4e,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1f67d37f,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.ui.navigator 2 0 2022-05-21 09:56:33.403
+!MESSAGE Can't find Navigator Content Descriptor with id: org.eclipse.jst.servlet.ui.EnhancedJavaRendering
+
+!ENTRY org.eclipse.ui.navigator 2 0 2022-05-21 09:56:33.404
+!MESSAGE Can't find Navigator Content Descriptor with id: org.eclipse.jst.servlet.ui.EnhancedJavaRendering
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-05-21 09:56:36.202
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Nelcriollo'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-21 10:33:01.137
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/oomph/uss/updates/latest, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-21 10:33:02.564
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/oomph/uss/drops/nightly/N20180202-232207, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-21 10:33:04.125
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-21 10:33:04.876
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/6.11.0, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-21 10:33:05.055
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/updatesites/6.11.0.r201704240320, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-21 10:33:05.291
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/6.12.0, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-21 10:33:05.480
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/updatesites/6.12.0.r201709030044, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-21 10:33:05.692
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/6.13.1, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-21 10:33:05.857
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/updatesites/6.13.1.r201712040202, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-21 10:33:06.041
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/updatesites/6.13.1.r201712040515, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-21 10:33:06.192
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/6.14.2, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-21 10:33:06.359
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/updatesites/6.14.2.r201802161450, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-21 10:33:06.708
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/6.14.3, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-21 10:33:07.125
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/updatesites/6.14.3.r201802240500, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-21 10:33:07.293
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/7.0.0, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-21 10:33:07.470
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/updatesites/7.0.0.r201908191551, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-21 10:33:07.681
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/7.1.0, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-21 10:33:07.891
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/updatesites/7.1.0.r202001120626, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-21 10:33:08.033
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/7.2.0, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-21 10:33:08.202
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/updatesites/7.2.0.r202003151902, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-21 10:33:08.337
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/7.3.0, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-21 10:33:08.536
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/updatesites/7.3.0.r202008060316, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-21 10:33:08.734
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/7.4.0, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-21 10:33:08.964
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/updatesites/7.4.0.r202105021533, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-21 10:33:09.243
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/7.5.0, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-21 10:33:09.417
+!MESSAGE Using unsafe http transport to retrieve http://testng.org/testng-p2-update-site/updatesites/7.5.0.r202201070709, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-21 10:33:13.342
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/technology/m2e/releases/, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-21 10:33:14.525
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/technology/m2e/releases/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-21 10:33:14.799
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/technology/m2e/releases/, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2022-05-21 10:33:17.275
+!MESSAGE No repository found at http://download.eclipse.org/technology/m2e/releases/.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-21 10:33:17.556
+!MESSAGE Using unsafe http transport to retrieve http://download.oracle.com/otn_software/oepe/12.2.1.9/photon/repository/dependencies/, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-21 10:33:34.332
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/e4/snapshots/org.eclipse.e4.ui/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-21 10:33:35.228
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/updates, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-21 10:33:36.409
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/updates/release, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-21 10:33:36.684
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/release/1.2.2/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-21 10:33:37.565
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/release/1.2.1, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-21 10:33:37.861
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/release/1.2.0, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-21 10:33:38.832
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/release/1.1.0, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-21 10:33:39.106
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/updates/milestone, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-21 10:33:39.976
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/milestone/S911-1.2-RC1, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-21 10:33:40.365
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/milestone/S909-1.2-RC1, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-21 10:33:41.233
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/milestone/S908-1.2-RC1, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-21 10:33:42.059
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/milestone/S20210519-025928-1.2.2-M1/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-21 10:33:43.081
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/milestone/S20210406-153234/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-21 10:33:44.081
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/milestone/S20191129-202804-1.2.1-RC2, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-21 10:33:44.442
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/milestone/S20191118-183434-1.2.1-RC1, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-21 10:33:45.345
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/milestone/S20170529-101518-1.1-RC2, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-21 10:33:45.629
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/milestone/S20170525-115740-1.1-RC2, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-21 10:33:46.761
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/milestone/S20170523-143239-1.1-RC1, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-21 10:33:47.673
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/milestone/S20170516-113326-1.1-M7, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-21 10:33:47.966
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/updates/nightly, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-21 10:33:49.927
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/nightly/N20220521-034143/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-21 10:33:51.290
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/nightly/N20220520-034150/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-21 10:33:51.809
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/nightly/N20220519-034137/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-21 10:33:52.784
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/nightly/N20220518-034132/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-21 10:33:53.086
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/nightly/N20220517-034154/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-21 10:33:56.407
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/webtools/repository/2021-09/, see CVE-2021-41033. Consider using https instead.
+>>>>>>> ramaNcriollo

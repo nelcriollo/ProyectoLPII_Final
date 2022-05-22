@@ -1,0 +1,122 @@
+package log.ministerio.dao;
+
+import java.sql.CallableStatement;
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.List;
+
+import log.ministerio.entidad.Acceso;
+import log.ministerio.entidad.Usuario;
+import log.ministerio.interfaces.AccesoInterfaceDAO;
+import log.ministerio.utils.MySqlConexion;
+
+public class MySqlAccesoDAO implements AccesoInterfaceDAO {
+
+	@Override
+	public int Save(Acceso bean) {
+		int insert =-1;
+		Connection conex=null;
+		CallableStatement  cstm=null;
+
+		try {
+			conex=MySqlConexion.getConectar();
+			cstm=conex.prepareCall("{CALL SP_REGISTRAR_ACCESO(?,?)}");
+
+			cstm.setInt(1,bean.getCod_menu());
+			cstm.setInt(2,bean.getCod_usuario());
+	
+			insert=cstm.executeUpdate();
+			System.out.println("Se insertaron: "+insert+ " datos");
+
+		} catch (Exception e) {
+			System.out.println("Error en la insert..."+e.getMessage());
+		}finally {
+			try {
+				if(cstm!=null || conex!=null)
+					cstm.close();
+				conex.close();
+			} catch (SQLException ex) {
+				System.out.println("No se pudo conectar a la BD "+ex.getMessage());
+				ex.printStackTrace();
+			}
+		}
+
+		return insert;
+	}
+
+	@Override
+	public int Update(Acceso bean) {
+		int salida =-1;
+		Connection conex=null;
+		CallableStatement  cstm=null;
+
+		try {
+			conex=MySqlConexion.getConectar();
+			cstm=conex.prepareCall("{CALL SP_ACTUALIZAR_ACCESO(?,?)}");
+
+			cstm.setInt(1,bean.getCod_menu());
+			cstm.setInt(2,bean.getCod_usuario());
+	
+			salida=cstm.executeUpdate();
+			System.out.println("Se Actualizaron: "+salida+ " datos");
+
+		} catch (Exception e) {
+			System.out.println("Error en la insert..."+e.getMessage());
+		}finally {
+			try {
+				if(cstm!=null || conex!=null)
+					cstm.close();
+				conex.close();
+			} catch (SQLException ex) {
+				System.out.println("No se pudo conectar a la BD "+ex.getMessage());
+				ex.printStackTrace();
+			}
+		}
+
+		return salida;
+	}
+
+	@Override
+	public int Delete(int cod) {
+		int salida=-1; 
+		Connection conex=null; 
+		CallableStatement cstm=null; 
+		try { 
+
+			conex=MySqlConexion.getConectar();
+			cstm=conex.prepareCall("{call SP_ELIMINAR_ACCESO(?)}"); 
+			cstm.setInt(1, cod); 
+
+			salida=cstm.executeUpdate();
+			System.out.println("Se Eliminaron: "+salida+ " datos");
+		} 
+		catch (Exception e) {
+			System.out.println("Error en la Eliminazación..."+e.getMessage());
+		}finally {
+			try {
+				if(cstm!=null || conex!=null)
+					cstm.close();
+				conex.close();
+			} catch (SQLException ex) {
+				System.out.println("No se pudo conectar a la BD "+ex.getMessage());
+				ex.printStackTrace();
+			}
+		}
+
+		return salida;
+	}
+
+	@Override
+	public List<Acceso> listAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Acceso findById(int codAc) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

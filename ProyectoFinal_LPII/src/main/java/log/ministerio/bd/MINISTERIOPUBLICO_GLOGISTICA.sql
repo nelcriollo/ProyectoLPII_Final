@@ -1,8 +1,4 @@
 
--- si existe la bd la eleiminamos
-
--- creamos la BD
-
 DROP DATABASE IF  EXISTS MINISTERIOPUBLICO_GLOGISTICA;
 
 CREATE DATABASE IF NOT EXISTS  MINISTERIOPUBLICO_GLOGISTICA;
@@ -19,11 +15,11 @@ CREATE TABLE IF NOT EXISTS Proveedor
 		email varchar(50) unique null,
 		direccion varchar(100) null,
         departamento varchar(35)not null,
-        telÃ©fono varchar(15) not null,
+        teléfono varchar(15) not null,
         constraint  primary key(id_proveedor)
 ) ENGINE = InnoDB;
 
-INSERT INTO proveedor (razon_social,nombe_comercial,numero_ruc,email,direccion,departamento,telÃ©fono)
+INSERT INTO proveedor (razon_social,nombe_comercial,numero_ruc,email,direccion,departamento,teléfono)
 VALUES
 ('Compunet S.A.C','Compunet','12345678984','Compunet@gmail.com','los portales 2003 Cercado','Lima','125436588'),
 ('Distribuidora Maderas Perunas S.A.C','Moubles Peruanos','12345678901','MoublesPeruanos@gmail.com','los Portales 221 Surco','Lima','125436577'),
@@ -128,7 +124,7 @@ VALUES ('Gerente de Compras'),
 ('Sub Gerente de Abastecimiento'),
 ('Personal de Almacen'),
 ('Representante de la Oficina de TI'),
-('Sub Gerente de DevoluciÃ³n de Bienes'),
+('Sub Gerente de Devolución de Bienes'),
 ('Sub Gerente Administrativo');
 
 SELECT * FROM Cargo;
@@ -152,13 +148,14 @@ CREATE TABLE IF NOT EXISTS Empleado
 ) ENGINE = InnoDB;
 
 INSERT INTO Empleado (id_cargo,NomEmpleado,Apellidos,email,Telefono,fechaIngreso,fechaCeses)
-VALUES
+VALUES 
+('1','Nelson','Criollo','ncriollo.minpub@gob.pe','988777666','2011-02-02',null),
+('2','Franco','Chavez','fchavez.minpub@gob.pe','955444333','2014-05-05',null),
+('3','Alfredo','Soto','asoto.minpub@gob.pe','999888777','2010-01-01',null),
+('4','Jorge','Chavez','jchavez.minpub@gob.pe','966555444','2013-04-04',null),
+('5','Edith','Flores','eflores.minpub@gob.pe','977666555','2012-03-03',null),
+('6','Eduardo','Rojas','erojas.minpub@gob.pe','977666555','2012-03-03',null);
 
-('3','Alfredo','Soto','asoto.minpub@gob.pe','999888777','2010-01-01','2020-01-01'),
-('1','Nelson','Criollo','ncriollo.minpub@gob.pe','988777666','2011-02-02','2020-02-02'),
-('5','Grecia','Huarote','ghuarote.minpub@gob.pe','977666555','2012-03-03','2020-03-03'),
-('3','Angelo','Santana','asantana.minpub@gob.pe','966555444','2013-04-04','2020-04-04'),
-('2','Anghela','SÃ¡nchez','asanchez.minpub@gob.pe','955444333','2014-05-05','2020-05-05');
 
 SELECT * FROM   Empleado;
 
@@ -233,7 +230,7 @@ CREATE TABLE IF NOT EXISTS DetalleDevolucion
         id_Devolucion int not null,
 		id_detalle_orden int not null,
 		descripcion_del_bien nvarchar(100) null,
-		descripcion_del_daÃ±o text not null,
+		descripcion_del_daño text not null,
         Factura_referecia nvarchar(25) null,
 		precio float not null,
         cantidad int not null,
@@ -292,25 +289,86 @@ select * from MovimientosAlmacen;
 
 CREATE TABLE IF NOT EXISTS Usuario 
 (
-		User_Name nchar(15) not null,
-        contrasena nvarchar(100) not null,
-		id_Cargo int not null,
-		constraint primary key (User_Name),
-	    constraint FKCargoUsuario 
-	    foreign key(id_cargo)
-	    references Cargo(id_cargo)
+  cod_usuario int NOT NULL AUTO_INCREMENT,
+  login_usuario varchar(15) DEFAULT NULL,
+  password_usuario varchar(100) DEFAULT NULL,
+  id_Empleado int NOT NULL,
+  estado_usuario char(1) DEFAULT NULL,
+		constraint primary key (cod_usuario),
+	    constraint FKEmpleadoUsuario 
+	    foreign key(id_Empleado)
+	    references empleado(id_Empleado)
 ) ENGINE = InnoDB;
 
-INSERT INTO Usuario (User_Name,contrasena,id_Cargo)
+INSERT INTO Usuario (login_usuario,password_usuario,id_Empleado,estado_usuario)
 VALUES
-('Ncriollo',SHA('Ncriollo'),1),
-('Asoto',SHA('Asoto'),3),
-('Ghuarote',SHA('Ghuarote'),6),
-('Asantana',SHA('Asantana'),7);
+('Ncriollo',SHA('Ncriollo'),1,'1'),
+('Fchavez',SHA('Fchavez'),2,'1'),
+('Asoto',SHA('Asoto'),3,'1'),
+('Jchavez',SHA('Jchavez'),4,'1'),
+('Edith',SHA('Edith'),5,'1'),
+('Eduardo',SHA('Eduardo'),6,'1');
 
 select *  from Usuario;
 
+CREATE TABLE IF NOT EXISTS Menu (
+  cod_menu int NOT NULL AUTO_INCREMENT,
+  des_mmenu varchar(55) DEFAULT NULL,
+  icono_mmenu varchar(150) DEFAULT NULL,
+  constraint primary key (cod_menu)
+) ENGINE = InnoDB;
 
-show tables;
-show databases;
+INSERT INTO  Menu (cod_menu,des_mmenu,icono_mmenu)
+VALUES (1,'Mantenimiento','fas fa-boxes text-light me-3'),
+	   (2,'Movimientos','fas fa-truck-loading text-light me-3'),
+       (3,'Consultar','fas fa-dna text-light me-3'),
+       (4,'Reporte','fas fa-barcode text-light me-3'),
+       (5,'Nosotos','fas fa-users text-light me-3');
 
+select *  from Menu;
+
+CREATE TABLE IF NOT EXISTS Roles_UsuarioMenu (
+  cod_Rol int NOT NULL AUTO_INCREMENT,
+  des_Rol varchar(55) DEFAULT NULL,
+  url_Rol varchar(500) DEFAULT NULL,
+  cod_menu int NOT NULL,
+  constraint primary key (cod_Rol),
+  CONSTRAINT FKMenu_RolesUsuario FOREIGN KEY (cod_menu) REFERENCES Menu (cod_menu)
+) ENGINE = InnoDB;
+
+INSERT INTO  Roles_UsuarioMenu (cod_Rol,des_Rol,url_Rol,cod_menu)
+VALUES  (1,'Bienes','ServletBienes?tipo=LISTAR',1),
+		(2,'Orden de Compra','ServletOrdenCompra?tipo=LISTAR.jsp',1),
+		(3,'Proveedores','ServletProveedor?tipo=LISTAR.jsp',1),
+		(4,'Devolucion de bienes','ServletDevolucion?tipo=LISTAR.jsp',1),
+		(5,'Carta de Devolución de Bienes','ServletCartaDevolucion?tipo=LISTAR',1),
+		(6,'Inventario de Bienes','ServletInventarioBienes?tipo=LISTAR.jsp',2),
+        (7,'Consultar Bienes','ServletBienes?tipo=LISTAR.jsp',3),
+		(8,'Consultar Orden de Compra','ServletOrdenCompra?tipo=LISTAR.jsp',3),
+		(9,'Reporte de Orden de Compra','ServletOrdenCompra?tipo=REPORTE.jsp',4),
+		(10,'Reporte de Devolucion de bienes','ServletDevolucion?tipo=REPORTE.jsp',4),
+		(11,'Reporte de Bienes','ServletBienes?tipo=REPORTE',4),
+		(12,'Reporte de Inventario de Bienes','ServletInventarioBienes?tipo=REPORTE.jsp',4),
+		(13,'Qiénes Somos','ServletNosotros?tipo=LISTAR.jsp',5);
+
+select * from Roles_UsuarioMenu;
+
+CREATE TABLE IF NOT EXISTS Acceso (
+  cod_menu int NOT NULL,
+  cod_usuario int NOT NULL,
+  cod_Rol int NOT NULL,
+ constraint primary key (cod_menu,cod_usuario,cod_Rol),
+  CONSTRAINT FKMenu_Acceso FOREIGN KEY (cod_menu) REFERENCES Menu (cod_menu),
+  CONSTRAINT FKUsuario_Acceso FOREIGN KEY (cod_usuario) REFERENCES Usuario (cod_usuario),
+  CONSTRAINT FKRolesUsuarioMenu_Acceso FOREIGN KEY (cod_Rol) REFERENCES Roles_UsuarioMenu (cod_Rol)
+) ENGINE = InnoDB;
+
+INSERT INTO Acceso (cod_menu,cod_usuario,cod_Rol)
+VALUES (1,1,1),(1,1,2),(1,1,3),(1,1,4),(1,1,5),(2,1,6),(3,1,7),(3,1,8),(4,1,9),(4,1,10),(4,1,11),(4,1,12),(5,1,13),
+	   (1,2,1),(1,2,2),(1,2,3),(1,2,4),(1,2,5),(2,2,6),(3,2,7),(3,2,8),(4,2,9),(4,2,10),(4,2,11),(4,2,12),(5,2,13),
+       (1,3,1),(1,3,2),(1,3,3),(1,3,4),(1,3,5),(2,3,6),(3,3,7),(3,3,8),(4,3,9),(4,3,10),(4,3,11),(4,3,12),(5,3,13),
+       (1,4,1),(1,4,2),(1,4,3),(1,4,4),(1,4,5),(2,4,6),(3,4,7),(3,4,8),(4,4,9),(4,4,10),(4,4,11),(4,4,12),(5,4,13),
+       (1,5,1),(1,5,2),(1,5,3),(1,5,4),(1,5,5),(2,5,6),(3,5,7),(3,5,8),(4,5,9),(4,5,10),(4,5,11),(4,5,12),(5,5,13),
+       (1,6,1),(1,6,2),(1,6,3),(1,6,4),(1,6,5),(2,6,6),(3,6,7),(3,6,8),(4,6,9),(4,6,10),(4,6,11),(4,6,12),(5,6,13);
+
+select *  from Acceso;

@@ -1,0 +1,61 @@
+@charset "ISO-8859-1";
+
+body {
+	background: #051F4E;
+	background-image: radial-gradient(circle at 111.24% 14.64%, #3d80d7 0, #05294e 50%,
+		#000000 100%);
+	min-height: 100vh;
+}
+
+.fondo-container {
+	background-image: radial-gradient(circle at 111.24% 14.64%, #3d80d7 0, #05294e 50%,
+		#000000 100%);
+}
+
+.imgenfondologin {
+	background-image: url("../img/loginimg.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.navbar-brand__brand {
+	align-content: center;
+}
+
+.img-t {
+	width: 400px;
+}
+
+.itenlink {
+	text-decoration: none;
+}
+
+.input-group input {
+	outline: none;
+	padding: 8px 50px;
+	font-size: 18px;
+	border: 0;
+	justify-content: center;
+}
+.beforeicon{
+	position: relative;
+}
+
+.beforeicon::before {
+	font-family: "Font Awesome\ 5 Free";
+		position: absolute;
+	font-weight: 300PX;
+
+	left: 0px;
+	font-size: 22px;
+	color: black;
+}
+
+.beforeicon#idicon-User::before {
+	content:"\f007";
+}
+
+.input-group#idicon-Clave::before {
+	content:"\f084";
+}

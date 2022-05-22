@@ -1,3 +1,6 @@
+
+<%@ taglib uri="http://java.sun.com/jstl/core_rt" prefix="c"%>
+
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
@@ -5,21 +8,52 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Login</title>
+<!--  jquery-->
+<link rel="stylesheet"
+	href=" https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+
+<!-- Los iconos tipo Solid de Fontawesome-->
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+	integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+	crossorigin="anonymous" />
 
 <link rel="stylesheet"
 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
 	integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
 	crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- Los estilos de Bootstrap-->
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
 	rel="stylesheet"
 	integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-	crossorigin="anonymous">
+	crossorigin="anonymous" />
 
+<!-- Los estilos locales de la carpeta css de proyecto-->
 <link rel="stylesheet" href="./css/login.css">
 
 </head>
 <body>
+
+	<c:if test="${requestScope.MENSAJE!=null}">
+
+
+		<div class="toast-container position-absolute top-0 end-0 p-2 top-5">
+
+
+			<div class="toast bg-black" role="alert" aria-live="assertive"
+				aria-atomic="true" data-bs-delay="4000">
+				<div class="toast-header">
+					<strong class="me-auto text-body">Mensaje de Sistema</strong>
+					<button type="button" class="btn-close" data-bs-dismiss="toast"
+						aria-label="Close"></button>
+				</div>
+				<div class="toast-body text-light">${requestScope.MENSAJE}</div>
+			</div>
+		</div>
+
+
+	</c:if>
 
 	<div
 		class="container-fluid w-75 h-auto fondo-container rounded shadow-lg">
@@ -35,23 +69,26 @@
 			<div class="col text-light rounded p-5 rounded-end shadow-lg">
 				<h2 class="text-light text-center">LOGIN</h2>
 				<br />
-				<form action="#">
+				<form action="ServletUsuario?tipo=INICIAR" method="post">
 					<div class="row mb-4">
-						<label for="inputEmail3"
-							class="col-xsm-2 col-sm-2 col-form-label me-2">User</label>
-						<div class="col-sm-9">
-							<input type="email" class="form-control" name="email"
-								id="idEmail">
+						<div class="col input-groupp" id="idicon-User">
+							<input type="text"
+								class="form-control rounded-end iconoUser-placeholder-img"
+								placeholder="Ingresar Usuario" id="idUsuario" name="usuario"
+								required />
+
 						</div>
 					</div>
-					<div class="row mb-4">
-						<label for="inputPassword3"
-							class="col-xsm-2 col-sm-2 col-form-label me-2">Password</label>
-						<div class="col-sm-9">
-							<input type="password" class="form-control" name="password"
-								id="idPassword">
+
+					<div class="row mb-4 ">
+						<div class="col input-groupp" id="idicon-Clave">
+							<input type="password"
+								class="form-control rounded-end iconoClave-placeholder-img"
+								placeholder="Ingresarr Contraseña" name="clave" id="idClave"
+								required />
 						</div>
 					</div>
+
 					<div class=" mb-4 d-grid">
 						<button type="submit" class="btn btn-primary">Iniciar
 							Sesion</button>
@@ -96,15 +133,29 @@
 
 	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+		crossorigin="anonymous"></script>
+
 	<script
 		src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
 		crossorigin="anonymous"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 
 
 	<!-- JS para validación-->
 	<script
 		src="https://cdn.bootcdn.net/ajax/libs/bootstrap-validator/0.4.0/js/bootstrapValidator.js"></script>
+
+	<script>
+		$(document).ready(function() {
+			$('.toast').toast('show');
+		});
+	</script>
+
+
 
 </body>
 </html>

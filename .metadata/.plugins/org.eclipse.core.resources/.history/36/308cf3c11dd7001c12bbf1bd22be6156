@@ -1,0 +1,46 @@
+package log.ministerio.dao;
+
+import java.util.List;
+
+import log.ministerio.entidad.Acceso;
+import log.ministerio.interfaces.AccesoInterfaceDAO;
+
+public class MySqlAccesoDAO implements AccesoInterfaceDAO {
+
+	@Override
+	public Acceso inicioSession(String login_usuario, String password_usuario) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public int Save(Acceso bean) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int Update(Acceso bean) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int Delete(int cod) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public List<Acceso> listAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Acceso findById(int codAc) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
