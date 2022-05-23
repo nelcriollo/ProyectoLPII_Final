@@ -92,7 +92,7 @@ public class ServletUsuario extends HttpServlet {
 			request.setAttribute("usuario", bean);
 			session.setAttribute("LISTAMenu", Menus);
 			session.setAttribute("LISTAOpciones", OpcionesMenu);
-			request.getRequestDispatcher("/menuprincipal.jsp").forward(request, response);
+			request.getRequestDispatcher("/Index.jsp").forward(request, response);
 
 		}
 	}
