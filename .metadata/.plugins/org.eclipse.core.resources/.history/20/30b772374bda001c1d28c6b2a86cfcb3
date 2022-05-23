@@ -1,0 +1,398 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<title>Mantenimiento de devolucion de bienes</title>
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+	crossorigin="anonymous">
+<link
+	href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css"
+	rel="stylesheet">
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+	integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+	crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet"
+	href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+
+<style type="text/css">
+.fondonavsup {
+	background-image: radial-gradient(circle at 119.64% 37.72%, #18344a 0, #010912 50%,
+		#000000 100%);
+}
+
+.fondonavbody {
+	background-image: radial-gradient(circle at 119.64% 37.72%, #204177 0, #021a39 50%,
+		#000000 100%);
+}
+
+.men {
+	background: green;
+	padding: 2px;
+	width: 90%;
+	height: 100%;
+}
+
+.navbar-brand__sup {
+	width: 220px;
+	height: 70px;
+}
+
+.navbar-brand__brand {
+	width: 50px;
+}
+
+.navbar-brand__icon {
+	width: 50px;
+	height: 50px;
+	align-self: center;
+}
+
+.marg-top {
+	margin-top: 95px;
+}
+</style>
+</head>
+<body>
+	<nav
+		class="navbar sticky-top navbar-dark fondonavsup justify-content-between">
+		<div class="container-fluid">
+
+			<div class="d-flex d-content-start">
+				<!--Brand-->
+				<a href="#" class="navbar-brand d-flex"> <img
+					src="./img/logominis_navbar.svg" all="we share" loading="lazy"
+					class="navbar-brand__sup text-light" />
+				</a>
+				<button class="navbar-toggler navbar-brand__icon" type="button"
+					data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+					aria-controls="offcanvasNavbar">
+					<i class="fas fa-home text-light"></i>
+				</button>
+			</div>
+
+			<div class="d-flex d-content-between">
+				<img src="imagenes/usuario.png" all="we share" loading="lazy"
+					class="navbar-brand__brand rounded-circle bg-light tabindex-80" />
+				<li class="navbar dropdown"><a
+					class="nav-link navbar-brand dropdown-toggle" href="#"
+					id="offcanvasNavbarDropdown" role="button"
+					data-bs-toggle="dropdown" aria-expanded="false"> Usuario </a>
+
+					<ul class="dropdown-menu dropdown-menu-dark fondonavsup"
+						aria-labelledby="offcanvasNavbarDropdown">
+						<li><a class="dropdown-item" href="#">Nelson</a></li>
+						<li><a class="dropdown-item" href="#">Alfredo</a></li>
+						<li><a class="dropdown-item" href="#">Edith</a></li>
+						<li><a class="dropdown-item" href="#">Franco</a></li>
+						<li><a class="dropdown-item" href="#">Jorge</a></li>
+						<li><a class="dropdown-item" href="#">Eduardo</a></li>
+					</ul></li>
+			</div>
+
+
+			<div class="offcanvas offcanvas-start marg-top" tabindex="-1"
+				id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel"
+				data-bs-scroll="true" data-bs-backdrop="true">
+
+				<div class="offcanvas-body fondonavbody" tabindex="-1">
+
+					<ul class="navbar-nav flex-grow-1 pe-3 navbar-brand">
+
+
+						<li class="nav-item"><a
+							class="nav-link dropdown-toggle d-block" href="#"
+							id="offcanvasNavbarDropdown" role="button"
+							data-bs-toggle="dropdown" aria-expanded="false"><i
+								class="fas fa-boxes text-light me-3"></i>Mantenimiento </a>
+							<ul class="dropdown-menu dropdown-menu-dark fondonavsup"
+								aria-labelledby="offcanvasNavbarDropdown">
+								<li><a class="dropdown-item" href="#">Registro de
+										Bienes</a></li>
+								<li><a class="dropdown-item" href="#">Registro de
+										Proveedores</a></li>
+								<li><a class="dropdown-item" href="#">Registro de
+										Devoluciones</a></li>
+								<li><a class="dropdown-item" href="#">Registro de Orden
+										de Compra</a></li>
+								<li>
+									<hr class="dropdown-divider">
+								</li>
+								<li><a class="dropdown-item" href="#">Otros</a></li>
+							</ul></li>
+
+
+						<li class="nav-item dropdown p-1"><a
+							class="nav-link dropdown-toggle" href="#"
+							id="offcanvasNavbarDropdown" role="button"
+							data-bs-toggle="dropdown" aria-expanded="false"><i
+								class="fas fa-truck-loading text-light me-3"></i>Movimientos </a>
+							<ul class="dropdown-menu dropdown-menu-dark fondonavsup"
+								aria-labelledby="offcanvasNavbarDropdown">
+								<li><a class="dropdown-item" href="#">Ingresos de
+										Almacén</a></li>
+								<li><a class="dropdown-item" href="#">Egresos de
+										Almacén</a></li>
+								<li>
+									<hr class="dropdown-divider">
+								</li>
+								<li><a class="dropdown-item" href="#">Otros</a></li>
+							</ul></li>
+
+						<li class="nav-item dropdown p-1"><a
+							class="nav-link dropdown-toggle" href="#"
+							id="offcanvasNavbarDropdown" role="button"
+							data-bs-toggle="dropdown" aria-expanded="false"><i
+								class="fas fa-dna text-light me-3"></i>Consultar </a>
+							<ul class="dropdown-menu dropdown-menu-dark fondonavsup"
+								aria-labelledby="offcanvasNavbarDropdown">
+								<li><a class="dropdown-item" href="#">Consulta 01</a></li>
+								<li><a class="dropdown-item" href="#">Consulta 02</a></li>
+								<li>
+									<hr class="dropdown-divider">
+								</li>
+								<li><a class="dropdown-item" href="#">Otros</a></li>
+							</ul></li>
+
+						<li class="nav-item dropdown p-1"><a
+							class="nav-link dropdown-toggle" href="#"
+							id="offcanvasNavbarDropdown" role="button"
+							data-bs-toggle="dropdown" aria-expanded="false"><i
+								class="fas fa-barcode text-light me-3"></i>Reporte </a>
+							<ul class="dropdown-menu dropdown-menu-dark fondonavsup"
+								aria-labelledby="offcanvasNavbarDropdown">
+								<li><a class="dropdown-item" href="#">Reporte 01</a></li>
+								<li><a class="dropdown-item" href="#">Reporte 02</a></li>
+								<li>
+									<hr class="dropdown-divider">
+								</li>
+								<li><a class="dropdown-item" href="#">Otros</a></li>
+							</ul></li>
+
+						<li class="nav-item dropdown pe-1"><a
+							class="nav-link dropdown-toggle" href="#"
+							id="offcanvasNavbarDropdown" role="button"
+							data-bs-toggle="dropdown" aria-expanded="false"> <i
+								class="fas fa-users text-light me-3"></i> Nosotros
+						</a>
+							<ul class="dropdown-menu dropdown-menu-dark fondonavsup"
+								aria-labelledby="offcanvasNavbarDropdown">
+								<li><a class="dropdown-item" href="#">Misión</a></li>
+								<li><a class="dropdown-item" href="#">Visión</a></li>
+								<li>
+									<hr class="dropdown-divider">
+								</li>
+								<li><a class="dropdown-item" href="#">Otros</a></li>
+							</ul></li>
+
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<div id="principal" class="container">
+		<div class="row mx-5 my-4">
+			<div class="col-md-6 text-center p-5 lh-sm">
+
+				<h5 class="fw-bold">Registro de Devolución de Bienes</h5>
+				<p>Av Abancay cuadra. 5 S/N, Lima,Perú</p>
+				<p>Telf: 990990215 - 989435229</p>
+			</div>
+
+			<div class="col-md-4 text-center p-3 lh-sm border border-secondary">
+				<h3>RUC:20401381291</h3>
+				<h3>FICHA DE DEVOLUCIÓN</h3>
+				<div class="row">
+					<div class=" mb-2 row g-3 d-flex justify-content-center mr-3">
+						<div class="col-auto">
+							<label for="inputPassword6" class="col-form-label">NRO:</label>
+						</div>
+						<div class="col-auto">
+							<input type="text" id="inputPassword6" class="form-control"
+								aria-describedby="passwordHelpInline">
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<div class="col-md-2"></div>
+		</div>
+
+		<div class="row">
+			<h3 style="margin-left: 4%">Datos de Registro de Devoluciones</h3>
+			<form class="form-horizontal border border-secondary">
+				<div class="row">
+					<div class="col-10">
+						<div class="row my-2">
+							<div class="col-md-5 col-12 pe-5">
+								<div class="row mb-1">
+									<label for="txtFechaDevolucion" class=" col-6 col-form-label">Fecha
+										de Devolución</label>
+									<div class="col-6">
+										<input type="date" id="txtFechaDevolucion"
+											class="form-control">
+									</div>
+								</div>
+							</div>
+							<div class="col-md-5 col-12 pe-5">
+								<div class="row mb-1">
+									<label for="mpDepartamento" class="col-6 col-form-label">Remitente</label>
+									<div class="col-6">
+										<select id="mpDepartamento" class="form-select">
+											<option selected>Seleccionar</option>
+											<option></option>
+											<option></option>
+											<option></option>
+										</select>
+									</div>
+
+								</div>
+
+							</div>
+
+						</div>
+						<div class="row my-2">
+							<div class="col-md-5 col-12 pe-5">
+								<div class="row mb-1">
+									<label for="txtProveedor" class=" col-6 col-form-label">Proveedor</label>
+									<div class="col-6">
+										<input type="text" id="txtProveedor" class="form-control">
+									</div>
+								</div>
+							</div>
+							<div class="col-md-5 col-12 pe-5">
+								<div class="row mb-1">
+									<label for="mpDepartamento" class="col-6 col-form-label">Total
+										crédito adeudado</label>
+									<div class="col-6">
+										<select id="mpDepartamento" class="form-select">
+											<option selected>Seleccionar</option>
+											<option></option>
+											<option></option>
+											<option></option>
+										</select>
+									</div>
+
+								</div>
+
+							</div>
+
+
+						</div>
+					</div>
+					<div class="col-2">
+						<div class="row">
+							<div class="row mb-1">
+								<button class="btn btn-dark p-1 " type="submit">Nuevo</button>
+							</div>
+						</div>
+						<div class="row">
+							<div class="row mb-1">
+								<button class="btn btn-dark p-1 " type="submit">Grabar</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+			</form>
+		</div>
+
+
+		<div class="row mt-3">
+			<table class="table table-striped">
+				<thead>
+					<tr class="table-success">
+						<th scope="col">Num. de Devolución</th>
+						<th scope="col">Fecha de Devolución</th>
+						<th scope="col">Proveedor</th>
+						<th scope="col">Remitente</th>
+						<th scope="col">Total de Devolución</th>
+						<th scope="col"></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td><i class="bi bi-trash-fill" style="font-size: 1.2rem;"></i>
+							<button class="btn btn-secondary float-end mx-1">Eliminar</button>
+							<button class="btn btn-secondary float-end mx-1">Actualizar</button>
+							<button class="btn btn-secondary float-end mx-1">Generar
+								detalle</button></td>
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+	<footer class="text-center text-white"
+		style="background-image: radial-gradient(circle at 119.64% 37.72%, #18344a 0, #010912 50%, #000000 100%);">
+		<br>
+		<div class="container p-4">
+
+			<div class="row fs-6">
+				<div class="col-lg-3 mb-6 mb-lg-0">
+					<h5 class="text-uppercase">UBICACIÓN</h5>
+					<p>
+						Av. Abancay 5, <br> Cercado de Lima 15001
+					</p>
+				</div>
+				<div class="col-lg-6 mb-12 mb-lg-0">
+					<!-- Section: Social media -->
+					<section class="mb-4">
+						<h4>Ministerio Público - Fiscalía de la Nación 2022</h4>
+
+						<a class="btn btn-outline-light btn-social mx-1"
+							href="https://es-la.facebook.com/"><i
+							class="fab fa-fw fa-facebook-f"></i></a> <a
+							class="btn btn-outline-light btn-social mx-1"
+							href="https://twitter.com/"><i class="fab fa-fw fa-twitter"></i></a>
+						<a class="btn btn-outline-light btn-social mx-1"
+							href="https://www.youtube.com/"><i
+							class="fab fa-fw fa-youtube"></i></a>
+					</section>
+				</div>
+				<!--Grid column-->
+				<div class="col-lg-3 mb-6 mb-lg-0">
+					<h5 class="text-uppercase">CONTACTO</h5>
+					<p>
+						Central Telefónica: <br> 625-5555<br> Línea Gratuita:<br>
+						0-800-00-205
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="text-center p-3"
+			style="background-color: rgba(0, 0, 0, 0.2);">© Derechos
+			Reservados</div>
+	</footer>
+
+	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+		crossorigin="anonymous"></script>
+	<script
+		src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+	<script
+		src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap5.min.js"></script>
+
+	<!-- JS para validación-->
+	<script
+		src="https://cdn.bootcdn.net/ajax/libs/bootstrap-validator/0.4.0/js/bootstrapValidator.js"></script>
+	<script>
+		
+	</script>
+</body>
+</html>

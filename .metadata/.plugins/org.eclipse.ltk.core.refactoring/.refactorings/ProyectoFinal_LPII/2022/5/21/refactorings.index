@@ -17,3 +17,5 @@
 1652929279158	Rename type 'prueba'
 1652931236927	Rename field 'objMenu'
 1653021489643	Encapsulate field 'cod_Rol'
+1653286841600	Rename resource 'Mantenimiento_Devolucion_de_Bienes.jsp'
+1653287245286	Rename resource 'Devolucion.jsp'
