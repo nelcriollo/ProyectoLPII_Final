@@ -8,6 +8,7 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Login</title>
+
 <!--  jquery-->
 <link rel="stylesheet"
 	href=" https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
@@ -38,7 +39,7 @@
 	<c:if test="${requestScope.MENSAJE!=null}">
 
 
-		<div class="toast-container position-absolute top-0 end-0 p-2 top-5">
+		<div class="toast-container position-absolute top-0 end-0 p-2 top-5" >
 
 
 			<div class="toast bg-black" role="alert" aria-live="assertive"
@@ -69,7 +70,9 @@
 			<div class="col text-light rounded p-5 rounded-end shadow-lg">
 				<h2 class="text-light text-center">LOGIN</h2>
 				<br />
+				
 				<form action="ServletUsuario?tipo=INICIAR" method="post">
+			
 					<div class="row mb-4">
 						<div class="col input-groupp" id="idicon-User">
 							<input type="text"
@@ -85,7 +88,7 @@
 							<input type="password"
 								class="form-control rounded-end iconoClave-placeholder-img"
 								placeholder="Ingresarr Contraseña" name="clave" id="idClave"
-								required />
+								required/>
 						</div>
 					</div>
 
@@ -123,7 +126,9 @@
 							</button>
 						</div>
 					</div>
+			
 				</form>
+					
 			</div>
 
 		</div>
@@ -154,7 +159,6 @@
 			$('.toast').toast('show');
 		});
 	</script>
-
 
 
 </body>

@@ -2,7 +2,6 @@ package log.ministerio.controlador;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
 import javax.servlet.ServletException;
@@ -11,8 +10,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-
-import org.apache.jasper.tagplugins.jstl.core.ForEach;
 
 import log.ministerio.entidad.Acceso;
 import log.ministerio.entidad.Menu;
@@ -92,7 +89,8 @@ public class ServletUsuario extends HttpServlet {
 			request.setAttribute("usuario", bean);
 			session.setAttribute("LISTAMenu", Menus);
 			session.setAttribute("LISTAOpciones", OpcionesMenu);
-			request.getRequestDispatcher("/menuprincipal.jsp").forward(request, response);
+			request.getRequestDispatcher("/index.jsp").forward(request, response);
+		
 
 		}
 	}

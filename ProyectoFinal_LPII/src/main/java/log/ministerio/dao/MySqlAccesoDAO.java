@@ -127,9 +127,9 @@ public class MySqlAccesoDAO implements AccesoInterfaceDAO {
 
 				bean=new Acceso();
 
-				bean.setCod_menu(rs.getInt(1));
-				bean.setCod_usuario(rs.getInt(2));
-				bean.setCod_Rol(rs.getInt(3));
+				bean.setDes_menu(rs.getString(1));
+				bean.setLogin_usuario(rs.getString(2));
+				bean.setDes_rol(rs.getString(3));
 
 				lista.add(bean);
 				System.out.println("Se listaron: "+lista+ " datos");

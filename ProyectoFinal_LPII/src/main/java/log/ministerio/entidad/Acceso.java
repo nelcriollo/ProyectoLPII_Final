@@ -2,18 +2,17 @@ package log.ministerio.entidad;
 
 public class Acceso {
 	private int cod_menu,cod_usuario,cod_Rol;
-	private String des_menu,icono_menu;
+	private String des_menu,login_usuario,icono_menu,des_rol;
 
-
-
-
-
-	public Acceso(int cod_menu, int cod_usuario, int cod_Rol, String des_menu, String icono_menu) {
+	public Acceso(int cod_menu, int cod_usuario, int cod_Rol, String des_menu, String login_usuario, String icono_menu,
+			String des_rol) {
 		this.cod_menu = cod_menu;
 		this.cod_usuario = cod_usuario;
 		this.cod_Rol = cod_Rol;
 		this.des_menu = des_menu;
+		this.login_usuario = login_usuario;
 		this.icono_menu = icono_menu;
+		this.des_rol = des_rol;
 	}
 
 	public Acceso() {
@@ -52,6 +51,14 @@ public class Acceso {
 		this.des_menu = des_menu;
 	}
 
+	public String getLogin_usuario() {
+		return login_usuario;
+	}
+
+	public void setLogin_usuario(String login_usuario) {
+		this.login_usuario = login_usuario;
+	}
+
 	public String getIcono_menu() {
 		return icono_menu;
 	}
@@ -60,6 +67,15 @@ public class Acceso {
 		this.icono_menu = icono_menu;
 	}
 
+	public String getDes_rol() {
+		return des_rol;
+	}
+
+	public void setDes_rol(String des_rol) {
+		this.des_rol = des_rol;
+	}
+
+	
 
 
 }
