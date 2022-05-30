@@ -118,10 +118,6 @@ if (request.getSession().getAttribute("LISTAMenu") == null)
 		</div>
 	</nav>
 
-	<div class="fondomenuprincipall"></div>
-
-
-
 	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"
