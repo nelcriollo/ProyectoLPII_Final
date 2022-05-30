@@ -1,0 +1,30 @@
+CLONAR
+git clone (ruta del gitHub)
+
+COMANDOS PARA REALIZAR CAMBIOS
+git status - ver los cambios.
+git add . - agregar las carpetas.
+git status - ver los cambios agregados.
+git commit -m "comentario" - confirmar los cambios.
+
+CREAR RAMAS Y REALIZAR CAMBIOS
+git branch - ver las ramas creadas
+git branch Eduardo - crear una rama.
+git branch - ver nuevamente las ramas creadas.
+git checkout Eduardo - ingresar a la rama para realizar los cambios.
+git status - ver los cambios en la rama.
+git add . - agregar carpetas a modificar en rama.
+git status - ver los cambios modificados en rama.
+git commit -m "comentario" - confirmar cambios en rama.
+git push -u origin Eduardo - realizar los cambios en gitHub
+
+PREVIA COORDINACION DE CAMBIOS
+git checkout master - ingresar a la rama master
+
+Si es necesario se hace:
+git status
+git add .
+git commit -m "comentario"
+
+git merge Eduardo - generar los cambios en el master.
+git push -u origin master  - realizar los cambios en gitHub
